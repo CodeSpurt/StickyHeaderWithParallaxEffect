@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.codespurt.stickyheaderwithparallaxeffect.MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/imageView_height"
+        android:background="@drawable/background"
+        android:scaleType="fitCenter" />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/listView_divider"
+        android:dividerHeight="1dp"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/tv_sticky_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/textView_height"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Header"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold" />
+
+</FrameLayout>
